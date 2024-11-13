@@ -3437,6 +3437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 6327682320214579379, guid: d03fc4303da0ad740bde5e90e205513f, type: 3}
+  - {fileID: 6327682320214579379, guid: d389ba4186b5f6140b371b03f6b47c17, type: 3}
   uiManager: {fileID: 1147081483}
   gameManager: {fileID: 271528952}
 --- !u!4 &1563953864

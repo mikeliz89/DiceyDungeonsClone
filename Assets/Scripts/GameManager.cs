@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
             // V‰hennet‰‰n pelaajan noppien m‰‰r‰‰ yhdell‰
             DecreasePlayerDiceCount(1);
         }
-        if(Input.GetKeyDown(KeyCode.LeftAlt))
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             EnemyTakesDamage(10); // Ota 10 vahinkoa testimieless‰
         }
