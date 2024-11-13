@@ -381,6 +381,8 @@ GameObject:
   - component: {fileID: 299404873}
   - component: {fileID: 299404875}
   - component: {fileID: 299404874}
+  - component: {fileID: 299404876}
+  - component: {fileID: 299404877}
   m_Layer: 5
   m_Name: DiceSlot7
   m_TagString: Untagged
@@ -445,6 +447,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299404872}
   m_CullTransparentMesh: 1
+--- !u!114 &299404876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299404872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &299404877
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299404872}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &300537999
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +483,8 @@ GameObject:
   - component: {fileID: 300538000}
   - component: {fileID: 300538002}
   - component: {fileID: 300538001}
+  - component: {fileID: 300538003}
+  - component: {fileID: 300538004}
   m_Layer: 5
   m_Name: DiceSlot1
   m_TagString: Untagged
@@ -520,6 +549,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300537999}
   m_CullTransparentMesh: 1
+--- !u!114 &300538003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300537999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &300538004
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300537999}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &310104998
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +585,8 @@ GameObject:
   - component: {fileID: 310104999}
   - component: {fileID: 310105001}
   - component: {fileID: 310105000}
+  - component: {fileID: 310105002}
+  - component: {fileID: 310105003}
   m_Layer: 5
   m_Name: DiceSlot6
   m_TagString: Untagged
@@ -595,6 +651,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310104998}
   m_CullTransparentMesh: 1
+--- !u!114 &310105002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310104998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &310105003
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310104998}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &315257261
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,8 +785,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -47, y: 42.9}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -70.0231, y: 26}
+  m_SizeDelta: {x: 58.164, y: 17.4229}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435565900
 MonoBehaviour:
@@ -790,7 +871,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 79.25333, y: 86.513916, z: -41.092674, w: 0}
+  m_margin: {x: 79.25333, y: 57.475838, z: -98.470634, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1153,6 +1234,8 @@ GameObject:
   - component: {fileID: 650730912}
   - component: {fileID: 650730914}
   - component: {fileID: 650730913}
+  - component: {fileID: 650730915}
+  - component: {fileID: 650730916}
   m_Layer: 5
   m_Name: DiceSlot4
   m_TagString: Untagged
@@ -1217,6 +1300,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650730911}
   m_CullTransparentMesh: 1
+--- !u!114 &650730915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650730911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &650730916
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650730911}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &654155960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1580,8 @@ GameObject:
   - component: {fileID: 710258459}
   - component: {fileID: 710258461}
   - component: {fileID: 710258460}
+  - component: {fileID: 710258462}
+  - component: {fileID: 710258463}
   m_Layer: 5
   m_Name: DiceSlot9
   m_TagString: Untagged
@@ -1536,6 +1646,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710258458}
   m_CullTransparentMesh: 1
+--- !u!114 &710258462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710258458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &710258463
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710258458}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &711228575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,7 +1697,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711228575}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1572,8 +1707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 813.31, y: -262}
-  m_SizeDelta: {x: 160, y: 160}
+  m_AnchoredPosition: {x: 775, y: -198.55463}
+  m_SizeDelta: {x: 120, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711228577
 MonoBehaviour:
@@ -1808,6 +1943,8 @@ GameObject:
   - component: {fileID: 799282206}
   - component: {fileID: 799282208}
   - component: {fileID: 799282207}
+  - component: {fileID: 799282209}
+  - component: {fileID: 799282210}
   m_Layer: 5
   m_Name: DiceSlot3
   m_TagString: Untagged
@@ -1872,6 +2009,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799282205}
   m_CullTransparentMesh: 1
+--- !u!114 &799282209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799282205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &799282210
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799282205}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &808944968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +2045,8 @@ GameObject:
   - component: {fileID: 808944969}
   - component: {fileID: 808944971}
   - component: {fileID: 808944970}
+  - component: {fileID: 808944972}
+  - component: {fileID: 808944973}
   m_Layer: 5
   m_Name: DiceSlot8
   m_TagString: Untagged
@@ -1947,6 +2111,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808944968}
   m_CullTransparentMesh: 1
+--- !u!114 &808944972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808944968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &808944973
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808944968}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &827894863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,17 +2581,17 @@ RectTransform:
   - {fileID: 520715271}
   - {fileID: 1760219700}
   - {fileID: 300538000}
+  - {fileID: 1660526947}
+  - {fileID: 799282206}
+  - {fileID: 650730912}
+  - {fileID: 969899992}
   - {fileID: 310104999}
   - {fileID: 299404873}
   - {fileID: 808944969}
   - {fileID: 710258459}
   - {fileID: 1278812692}
-  - {fileID: 1660526947}
-  - {fileID: 799282206}
-  - {fileID: 650730912}
-  - {fileID: 969899992}
-  - {fileID: 1559934670}
   - {fileID: 711228576}
+  - {fileID: 1559934670}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2516,6 +2705,8 @@ GameObject:
   - component: {fileID: 969899992}
   - component: {fileID: 969899994}
   - component: {fileID: 969899993}
+  - component: {fileID: 969899995}
+  - component: {fileID: 969899996}
   m_Layer: 5
   m_Name: DiceSlot5
   m_TagString: Untagged
@@ -2580,6 +2771,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969899991}
   m_CullTransparentMesh: 1
+--- !u!114 &969899995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969899991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &969899996
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969899991}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1078644171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,6 +3253,8 @@ GameObject:
   - component: {fileID: 1278812692}
   - component: {fileID: 1278812694}
   - component: {fileID: 1278812693}
+  - component: {fileID: 1278812695}
+  - component: {fileID: 1278812696}
   m_Layer: 5
   m_Name: DiceSlot10
   m_TagString: Untagged
@@ -3101,6 +3319,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278812691}
   m_CullTransparentMesh: 1
+--- !u!114 &1278812695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278812691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
+--- !u!225 &1278812696
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278812691}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1364308489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,8 +3564,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 815, y: -392}
-  m_SizeDelta: {x: 160, y: 160}
+  m_AnchoredPosition: {x: 775, y: -333.50894}
+  m_SizeDelta: {x: 120, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559934671
 MonoBehaviour:
@@ -3541,6 +3784,8 @@ GameObject:
   - component: {fileID: 1660526947}
   - component: {fileID: 1660526949}
   - component: {fileID: 1660526948}
+  - component: {fileID: 1660526951}
+  - component: {fileID: 1660526950}
   m_Layer: 5
   m_Name: DiceSlot2
   m_TagString: Untagged
@@ -3605,6 +3850,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660526946}
   m_CullTransparentMesh: 1
+--- !u!225 &1660526950
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660526946}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1660526951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660526946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c58f4eb9bc718a408eb43e1d13858ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: c36a11aa36d59ac4485639115c663ff9, type: 3}
 --- !u!1 &1710380323
 GameObject:
   m_ObjectHideFlags: 0
