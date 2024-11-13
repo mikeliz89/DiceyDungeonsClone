@@ -50,3 +50,5 @@ MonoBehaviour:
   diceCount: 2
   damage: 10
   enemySprite: {fileID: 21300000, guid: b2558b7b6a05d3d4c93668262995eb76, type: 3}
+  audioClipTakingDamage: {fileID: 8300000, guid: 6e631301ae306934da9864abf48e22c7, type: 3}
+  audioClipDying: {fileID: 8300000, guid: eb7d9ba47a9cb3d4bbc0743b6614ac32, type: 3}

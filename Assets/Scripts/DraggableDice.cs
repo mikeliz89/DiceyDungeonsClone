@@ -44,28 +44,10 @@ public class DraggableDice : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         canvasGroup.blocksRaycasts = false;  // Est‰‰ vuorovaikutuksen muiden UI-elementtien kanssa
     }
 
-    /*
-    // P‰ivitt‰‰ kuvan sijainnin raahauksen aikana
-    public void OnDrag(PointerEventData eventData)
-    {
-        rectTransform.anchoredPosition += eventData.delta / parentCanvas.scaleFactor;  // Liikuttaa kuvaa raahaamalla
-    }
-
-    // K‰ynnistyy, kun raahaus p‰‰ttyy
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        canvasGroup.alpha = 1f;  // Palauttaa l‰pin‰kyvyyden normaaliksi
-        canvasGroup.blocksRaycasts = true;  // Palauttaa normaalin tapahtumien k‰sittelyn
-    }
-    */
-
     public void OnDrag(PointerEventData eventData)
     {
         // Tarkista, onko raahaaminen sallittua
         if (!isDraggingAllowed) return;
-
-        // P‰ivitt‰‰ raahattavan objektin sijainnin
-        // rectTransform.position = eventData.position;
 
         // P‰ivitt‰‰ raahattavan objektin sijainnin
         rectTransform.anchoredPosition += eventData.delta / canvasGroup.GetComponentInParent<Canvas>().scaleFactor;

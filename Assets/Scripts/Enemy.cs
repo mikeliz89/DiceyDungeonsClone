@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public float damage;
 
     public Sprite enemySprite; // Vihollisen kuva/sprit
+    [SerializeField] AudioClip audioClipTakingDamage;
+    [SerializeField] AudioClip audioClipDying;
 
     void Start()
     {
@@ -28,6 +30,8 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;  // V‰hennet‰‰n vahinko t‰m‰nhetkisest‰ healthista
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);  // Varmistetaan, ettei health mene miinukselle
 
+        AudioManager.instance.Play(audioClipTakingDamage);
+
         if (currentHealth <= 0)
         {
             Die();  // Kutsutaan Die-metodia, jos health menee nollaan
@@ -37,6 +41,7 @@ public class Enemy : MonoBehaviour
     // Metodi kuolemiselle
     protected virtual void Die()
     {
+        AudioManager.instance.Play(audioClipDying);
         Debug.Log(enemyName + " has been defeated!");
         // Lis‰‰ t‰nne koodi vihollisen tuhoamiselle, kuten animaatio tai objektin poistaminen
     }
