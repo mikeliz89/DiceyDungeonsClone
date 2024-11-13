@@ -29,6 +29,11 @@ public class UIManager : MonoBehaviour
         enemyNameText.text = name;
     }
 
+    public void SetEnemyImage(Sprite sprite)
+    {
+        enemyImage.sprite = sprite;
+    }
+
     public void UpdatePlayerHealth(float currentHealth, float maxHealth)
     {
         playerHealthSlider.value = currentHealth / maxHealth;

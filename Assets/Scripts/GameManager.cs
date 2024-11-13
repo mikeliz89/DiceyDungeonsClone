@@ -3,8 +3,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Player player; // Viittaa Player-objektiin
-    public Enemy enemy; //Viittaa enemy-objektiin
     public UIManager uiManager; // Ved‰ PlayerUI-komponentti inspectorissa
+    public EnemySpawner enemySpawner; //Viittaa EnemySpawner-objektiin
+
+    private Enemy currentEnemy; // Viittaus nykyiseen viholliseen
+
+    public void SetCurrentEnemy(Enemy enemy)
+    {
+        currentEnemy = enemy;
+        // Voit nyt k‰ytt‰‰ currentEnemy‰ pelilogiikassasi
+        Debug.Log($"Current enemy is {currentEnemy.enemyName}");
+    }
 
     void Start()
     {
@@ -12,11 +21,6 @@ public class GameManager : MonoBehaviour
         uiManager.SetPlayerName("Warrior"); // Aseta pelaajan nimi UI:hin
         uiManager.UpdatePlayerHealth(player.currentHealth, player.maxHealth); // P‰ivit‰ terveys UI:ssa
         uiManager.UpdatePlayerDiceCountText(player.diceCount); // Alustetaan pelaajan noppam‰‰r‰ ja p‰ivitet‰‰n UI
-
-        //alustetaan vihollinen
-        uiManager.SetEnemyName("Gunner");
-        uiManager.UpdateEnemyHealth(enemy.currentHealth, enemy.maxHealth); //P‰ivit‰ vihollisen terveys UI:ssa
-        uiManager.UpdateEnemyDiceCountText(enemy.diceCount); //Alustetaan vihollisen noppam‰‰r‰ ja p‰ivitet‰‰n UI
     }
 
     // Voit myˆs lis‰t‰ metodeja, jotka p‰ivitt‰v‰t healthin, kun pelaaja ottaa vahinkoa
@@ -39,6 +43,10 @@ public class GameManager : MonoBehaviour
         {
             // V‰hennet‰‰n pelaajan noppien m‰‰r‰‰ yhdell‰
             DecreasePlayerDiceCount(1);
+        }
+        if(Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            EnemyTakesDamage(10); // Ota 10 vahinkoa testimieless‰
         }
 
     }
@@ -71,8 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void EnemyTakesDamage(int damage)
     {
-        enemy.TakeDamage(damage); //v‰henn‰ terveytt‰
-        uiManager.UpdateEnemyHealth(enemy.currentHealth, player.maxHealth); //P‰ivit‰ terveys UI:ssa
+        currentEnemy.TakeDamage(damage); //v‰henn‰ terveytt‰
+        uiManager.UpdateEnemyHealth(currentEnemy.currentHealth, currentEnemy.maxHealth); //P‰ivit‰ terveys UI:ssa
     }
 
 }

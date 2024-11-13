@@ -7,11 +7,19 @@ public class Enemy : MonoBehaviour
     public float currentHealth;  // Vihollisen t‰m‰nhetkinen health
     //Vihollisen noppien m‰‰r‰
     public int diceCount = 5;  // Pelaajalla on aluksi 5 noppaa
+    public float damage;
+
+    public Sprite enemySprite; // Vihollisen kuva/sprit
 
     void Start()
     {
         // Asetetaan t‰m‰nhetkinen health maksimi healthiksi pelin alussa
         currentHealth = maxHealth;
+    }
+
+    public virtual void Attack()
+    {
+        Debug.Log($"{enemyName} attacks and deals {damage} damage");
     }
 
     // Metodi vahingon ottamiseen
@@ -27,7 +35,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Metodi kuolemiselle
-    private void Die()
+    protected virtual void Die()
     {
         Debug.Log(enemyName + " has been defeated!");
         // Lis‰‰ t‰nne koodi vihollisen tuhoamiselle, kuten animaatio tai objektin poistaminen
