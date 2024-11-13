@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Goomba
   maxHealth: 100
-  currentHealth: 90
+  currentHealth: 80
   diceCount: 3
   damage: 15
   enemySprite: {fileID: 21300000, guid: 13497eb005c6e9e418ba065adc4198da, type: 3}
