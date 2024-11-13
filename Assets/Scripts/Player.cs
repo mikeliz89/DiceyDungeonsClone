@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;  // Alustetaan nykyinen terveys
     }
 
+    public void Attack(int damage)
+    {
+        Debug.Log($"Player attacks and deals {damage} damage");
+    }
+
     // Metodi pelaajan vahingoittamiselle
     public void TakeDamage(int damage)
     {

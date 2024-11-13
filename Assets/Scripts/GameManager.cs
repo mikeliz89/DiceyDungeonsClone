@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
         {
             PlayerTakesDamage(10); // Ota 10 vahinkoa testimieless‰
         }
+        // Tarkista, onko vasen Alt painettu
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            EnemyTakesDamage(10); // Ota 10 vahinkoa testimieless‰
+        }
         // Tarkistetaan, onko T-kirjainta painettu
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -44,11 +49,6 @@ public class GameManager : MonoBehaviour
             // V‰hennet‰‰n pelaajan noppien m‰‰r‰‰ yhdell‰
             DecreasePlayerDiceCount(1);
         }
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
-        {
-            EnemyTakesDamage(10); // Ota 10 vahinkoa testimieless‰
-        }
-
     }
 
     // Metodi pelaajan noppam‰‰r‰n v‰hent‰miseksi
